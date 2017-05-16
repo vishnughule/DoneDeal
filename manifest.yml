@@ -1,0 +1,6 @@
+---
+applications:
+- name: Done-deal
+  memory: 512M
+  host: donedeal
+  path: ./target/DoneDeal-0.0.1-SNAPSHOT.jar
