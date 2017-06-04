@@ -1,20 +1,16 @@
 package com.ghule.donedeal.domain;
 
-import java.util.Date;
-
 public class Post {
 
 	private Integer id;
 
 	private String postContent;
 
-	private Date createdDate;
+	private Integer status;
 
-	private String userCreated;
+	private Integer zipCode;
 
-	private String userModified;
-
-	private Date modifiedDate;
+	private CommonRowDetails commonRowDetails;
 
 	public Post() {
 		// TODO Auto-generated constructor stub
@@ -41,37 +37,28 @@ public class Post {
 		this.postContent = postContent;
 	}
 
-	
-	public Date getCreatedDate() {
-		return createdDate;
+	public Integer getStatus() {
+		return status;
 	}
 
-	public void setCreatedDate(Date createdDate) {
-		this.createdDate = createdDate;
+	public void setStatus(Integer status) {
+		this.status = status;
 	}
 
-	public String getUserCreated() {
-		return userCreated;
+	public Integer getZipCode() {
+		return zipCode;
 	}
 
-	public void setUserCreated(String userCreated) {
-		this.userCreated = userCreated;
+	public void setZipCode(Integer zipCode) {
+		this.zipCode = zipCode;
 	}
 
-	public String getUserModified() {
-		return userModified;
+	public CommonRowDetails getCommonRowDetails() {
+		return commonRowDetails;
 	}
 
-	public void setUserModified(String userModified) {
-		this.userModified = userModified;
-	}
-
-	public Date getModifiedDate() {
-		return modifiedDate;
-	}
-
-	public void setModifiedDate(Date modifiedDate) {
-		this.modifiedDate = modifiedDate;
+	public void setCommonRowDetails(CommonRowDetails commonRowDetails) {
+		this.commonRowDetails = commonRowDetails;
 	}
 
 }
